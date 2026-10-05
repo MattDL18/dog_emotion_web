@@ -1,0 +1,13 @@
+# Backend
+ultralytics==8.4.126
+fastapi
+uvicorn[standard]
+python-multipart
+opencv-python-headless
+
+# Frontend
+streamlit
+requests
+pandas
+Pillow
+plotly
