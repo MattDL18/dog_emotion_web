@@ -1,8 +1,3 @@
-"""
-Dog Emotion Detector - Streamlit App (Self-contained, no separate backend)
-Group Robaitics - MAPUA University
-"""
-
 import os
 import io
 import urllib.request
@@ -15,15 +10,12 @@ import plotly.graph_objects as go
 
 # ---------------------------------------------------------------------------
 # MODEL DOWNLOAD CONFIG
-# Replace these URLs with your actual GitHub Release asset URLs
-# after uploading the .pt files to a GitHub Release.
 # ---------------------------------------------------------------------------
 MODEL_DIR = "models"
 MODEL_FILES = {
     "single_best.pt": "https://github.com/MattDL18/dog_emotion_web/releases/download/v1.0/single_best.pt",
     "localizer.pt":   "https://github.com/MattDL18/dog_emotion_web/releases/download/v1.0/localizer.pt",
     "cls_m.pt":       "https://github.com/MattDL18/dog_emotion_web/releases/download/v1.0/cls_m.pt",
-    # "cls_s.pt":     "https://...",  # add if you have this one too
 }
 
 def download_models():
